@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  jokeUrl: 'https://geek-jokes.sameerkumar.website/api'
 };

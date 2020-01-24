@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #baff00;
+  font-family: 'Bangers', cursive;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: rgb(0, 100, 55);
+}
+
+button {
+  background: #baff00;
+  color: rgb(0, 100, 55);
+  border: 0px;
+  padding: 5px 10px;
+  font-size: 3vw;
+  border-radius: 100px;
+  cursor: pointer;
+  outline: none;
+  margin: 20px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.95);
+  transition: transform 0.1s;
+}
+
+input {
+  border: 1px solid #baff00;
+  padding: 10px;
+  border-radius: 100px;
+  outline: none;
+  background: transparent;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #baff00;
+}
+
+.joke-container,
+.home-container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title {
+  margin-bottom: 10px;
+}
+
+.joke {
+  width: 100%;
+  font-size: 30px;
+  background: #baff00;
+  color: rgb(0, 100, 55);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
