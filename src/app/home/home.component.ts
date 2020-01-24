@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   }
 
   goJoke() {
-    this.router.navigate(['/home/joke'], { queryParams: { name: this.name } });
+    this.router.navigate(['/joke'], { queryParams: { name: this.name } });
   }
 
 }

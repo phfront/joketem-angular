@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { JokeComponent } from './home/joke/joke.component';
 
 
 const routes: Routes = [
-  { path: 'home', loadChildren:  () => import('./home/home.module').then(m => m.HomeModule) },
+  { path: 'home', component: HomeComponent },
+  { path: 'joke', component: JokeComponent },
+
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
