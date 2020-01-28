@@ -12,6 +12,7 @@ export class JokeComponent implements OnInit {
 
   public name: string;
   public joke: string;
+  public loading: boolean;
 
   constructor(
     private route: ActivatedRoute,
@@ -24,6 +25,13 @@ export class JokeComponent implements OnInit {
   }
 
   getJoke() {
-    this.jokeService.getJoke().pipe(take(1)).subscribe(joke => this.joke = joke);
+    this.loading = true;
+    this.jokeService.getJoke().pipe(take(1)).subscribe(
+      joke => {
+        this.joke = joke;
+        this.loading = false;
+      },
+      () => this.loading = false
+    );
   }
 }

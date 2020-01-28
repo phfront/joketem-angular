@@ -1,0 +1,14 @@
+@import './colors.scss';
+
+input {
+  border: 1px solid $secondary-color;
+  padding: 10px;
+  border-radius: 100px;
+  outline: none;
+  background: transparent;
+  text-align: center;
+}
+
+input::placeholder {
+  color: $secondary-color;
+}

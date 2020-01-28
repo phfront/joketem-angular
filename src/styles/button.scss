@@ -1,0 +1,29 @@
+@import './colors.scss';
+
+button {
+  background: $secondary-color;
+  color: $primary-color;
+  border: 0px;
+  padding: 5px 15px;
+  font-size: 3vw;
+  border-radius: 100px;
+  cursor: pointer;
+  outline: none;
+  margin: 20px;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.1s;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    transform: scale(1) !important;
+  }
+}
+
