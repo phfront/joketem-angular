@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "push-dir --dir=dist/joketem-angular --branch=gh-pages --cleanup"
+    "deploy": "ngh --dir \"dist/joketem-angular\""
   },
   "private": true,
   "dependencies": {
